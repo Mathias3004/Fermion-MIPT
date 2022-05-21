@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# time for each run in loop
+t="04:00:00"
+N_sample=200
+# clicks_per_sample = 100
+
+# folder to save
+path_store="store"
+
+# command for each job to loop over with different params
+count=0
+
+for ((N=300; N>=220; N-=20)) 
+do
+    for p in $(seq .0 .1 1.)
+    do
+
+        sbatch --time=$t submit_job $N $p $N_sample $N $path_store
+        echo "sbatch --time=$t submit_job $N $p $N_sample $N $path_store"
+            
+        count=$((count+1))
+    done
+done
+
+echo "$count jobs submitted"

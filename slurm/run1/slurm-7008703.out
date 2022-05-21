@@ -1,0 +1,5 @@
+60 0.9 200 60 store
+Running for N=60, p=0.9, N_sample=200, clicks_per_sample=60
+Data will be saved in folder store
+Obtaining 128 samples...
+Finished. Running time: 13.880512475967407

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# number of nodes
+#SBATCH -N 1
+
+# cores per node
+#SBATCH --ntasks-per-node=128
+
+# modules
+module load python
+
+# run command
+echo "${1} ${2} ${3} ${4} ${5}"
+/opt/packages/anaconda3/bin/python run_fermion_trajectories.py ${1} ${2} ${3} ${4} ${5}
