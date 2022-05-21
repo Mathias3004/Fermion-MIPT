@@ -120,8 +120,9 @@ venv.bak/
 # mkdocs documentation
 /site
 
-# don't copy data
+# don't copy data or output files
 *.npy
+*.out
 
 # mypy
 .mypy_cache/
