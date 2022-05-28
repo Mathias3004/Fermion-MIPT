@@ -1,5 +1,6 @@
-# ignore all slurm
+# ignore all slurm and data
 slurm*
+store*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
